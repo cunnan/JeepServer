@@ -21,7 +21,7 @@ Jeep.use(cors({
     origin:["http://127.0.0.1:3000",
     "http://localhost:3000"],
     credentials:true
-  }));
+}));
   
 
 //配置session
@@ -38,7 +38,7 @@ Jeep.use(session({
 //配置post请求数据解析
 Jeep.use(bodyParser.urlencoded({
     extended:false
-  }));
+}));
 
 
 //配置静态资源路径
