@@ -1,0 +1,27 @@
+{
+  "name": "JeepServer",
+  "version": "1.0.0",
+  "description": "JeepServer nodejs express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cunnan/JeepServer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cunnan/JeepServer/issues"
+  },
+  "homepage": "https://github.com/cunnan/JeepServer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mysql": "^2.16.0"
+  }
+}
