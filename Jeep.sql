@@ -16,7 +16,7 @@ CREATE TABLE jeep_nav(
 
 ##插入数据
 INSERT INTO jeep_nav VALUES
-(NULL,'../../assets/images/logo.png',10),
+(NULL,'@/assets/images/logo.png',10),
 (NULL,'品牌车型▼',20),
 (NULL,'Jeep&nbsp;Life',30),
 (NULL,'购车支持',40),
@@ -24,6 +24,6 @@ INSERT INTO jeep_nav VALUES
 (NULL,'品牌信息',60),
 (NULL,'查询经销商',70),
 (NULL,'预约试驾',80),
-(NULL,'../../assets/images/search.png',90),
-(NULL,'../../assets/images/sc.png',100),
-(NULL,'../../assets/images/dt.png',110);
+(NULL,'@/assets/images/search.png',90),
+(NULL,'@/assets/images/sc.png',100),
+(NULL,'@/assets/images/dt.png',110);
