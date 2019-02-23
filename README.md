@@ -10,3 +10,7 @@ npm install mysql --save    //数据库
 npm install body-parser --save  //post请求数据解析
 npm install express-session --save  //session 
 npm install cors --save //跨域访问模块
+
+#微信小程序id
+wxf448becaccbcd52f
+
