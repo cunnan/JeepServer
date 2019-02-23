@@ -29,7 +29,12 @@ index.get('/nav',(req,res)=>{
 })
 
 //post路由
-
+index.post('/nav2',(req,res)=>{
+    res.send({
+        num1:req.body.num1,
+        num2:req.body.num2
+    })
+})
 
 //导出路由器
 module.exports=index
