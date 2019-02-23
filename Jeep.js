@@ -4,7 +4,6 @@ const cors=require('cors')
 const session=require('express-session')
 const bodyParser=require('body-parser')
 
-
 //导入路由器
 const indexRouter=require('./routes/pre/index/index')
 
