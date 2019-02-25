@@ -24,7 +24,8 @@ index.use('/nav',(req,res,next)=>{
 //获取导航栏数据
 index.get('/nav',(req,res)=>{
     pool.query(req.sql,[],(err,result)=>{
-        res.send(result)
+        if(err) throw err;
+        res.send(result);
     })
 })
 
