@@ -14,7 +14,7 @@ index.use((req,res,next)=>{
 })
 //拦截指定路由
 index.use('/nav',(req,res,next)=>{
-    req.sql=`select * from jeep_nav`;
+    req.sql=`select * from j_nav`;
     next()
 })
 
