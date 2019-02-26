@@ -39,7 +39,7 @@ CREATE TABLE `j_nav` (
 
 LOCK TABLES `j_nav` WRITE;
 /*!40000 ALTER TABLE `j_nav` DISABLE KEYS */;
-INSERT INTO `j_nav` VALUES (1,0,'logo','/images/nav/logo.png'),(2,0,'品牌车型','null'),(3,0,'Jeep Life','null'),(4,0,'购车支持','null'),(5,0,'Jeep全境界','null'),(6,0,'品牌信息','null'),(7,0,'查询经销商','null'),(8,0,'预约试驾','null'),(9,0,'搜索','/images/nav/search.png'),(10,0,'收藏','/images/nav/sc.png '),(11,0,'导航','/images/nav/dt.png');
+INSERT INTO `j_nav` VALUES (1,0,'logo','http://127.0.0.1:5000/images/nav/logo.png'),(2,0,'品牌车型','null'),(3,0,'Jeep Life','null'),(4,0,'购车支持','null'),(5,0,'Jeep全境界','null'),(6,0,'品牌信息','null'),(7,0,'查询经销商','null'),(8,0,'预约试驾','null'),(9,0,'搜索','http://127.0.0.1:5000/images/nav/search.png'),(10,0,'收藏','http://127.0.0.1:5000/images/nav/sc.png '),(11,0,'导航','http://127.0.0.1:5000/images/nav/dt.png');
 /*!40000 ALTER TABLE `j_nav` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-25 23:07:20
+-- Dump completed on 2019-02-26 22:57:14
