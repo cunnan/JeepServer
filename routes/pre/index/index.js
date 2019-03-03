@@ -30,10 +30,39 @@ index.get('/nav',(req,res)=>{
 })
 //获取轮播图数据
 index.get('/banner',(req,res)=>{
-    req.sql=`select * from j_banner`
-    pool.query(req.sql,[],(err,result)=>{
+    sql=`select * from j_banner`
+    pool.query(sql,[],(err,result)=>{
         if(err) throw err;
         res.send(result);
+    })
+})
+// 获取导航列表数据
+index.get('/navlist',(req,res)=>{
+    var progress=0;
+    var data={};
+    sql=`select * from j_nav_list`;
+    pool.query(sql,[],(err,result1)=>{
+        if(err) throw err;
+        data.navlist=result1;
+        progress+=50;
+        if(progress==100){
+            res.send({
+                code:1,
+                data
+            })
+        }
+    })
+    sql=`select * from j_nav_function`;
+    pool.query(sql,[],(err,result2)=>{
+        if(err) throw err;
+        data.navFunc=result2;
+        progress+=50;
+        if(progress==100){
+            res.send({
+                code:1,
+                data
+            })
+        }
     })
 })
 
