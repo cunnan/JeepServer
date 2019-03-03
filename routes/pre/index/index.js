@@ -28,6 +28,15 @@ index.get('/nav',(req,res)=>{
         res.send(result);
     })
 })
+//获取轮播图数据
+index.get('/banner',(req,res)=>{
+    req.sql=`select * from j_banner`
+    pool.query(req.sql,[],(err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+})
+
 
 //post路由
 index.post('/nav2',(req,res)=>{
